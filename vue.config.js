@@ -2,6 +2,7 @@ const path = require('path')
 module.exports = {
   //配置方式一：CLI提供属性
   outputDir: './build', // 打包位置
+  publicPath: './', //修改的是加载资源对应的路径,不用在webpack打包后再加./
   //配置方式二：与webpack相同，最后被合并到一起
   // 这里是个对象，相当于用webpack-merger进行合并
   //为了在其他文件中引入路径起一个别名，方便后续引入
